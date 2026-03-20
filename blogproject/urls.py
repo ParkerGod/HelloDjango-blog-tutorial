@@ -21,6 +21,7 @@ from blog.feeds import AllPostsRssFeed
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('search/', include('haystack.urls')),
+    path('api/', include('blog.api_urls')),
     path('', include('blog.urls')),
     path('', include('comments.urls')),
 
