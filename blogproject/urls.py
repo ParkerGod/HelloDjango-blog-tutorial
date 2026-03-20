@@ -23,6 +23,7 @@ urlpatterns = [
     path('search/', include('haystack.urls')),
     path('', include('blog.urls')),
     path('', include('comments.urls')),
+    path('api/', include('blog.api_urls')),
 
     # 记得在顶部引入 AllPostsRssFeed
     path('all/rss/', AllPostsRssFeed(), name='rss'),
