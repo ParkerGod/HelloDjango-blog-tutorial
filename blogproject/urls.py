@@ -26,4 +26,7 @@ urlpatterns = [
 
     # 记得在顶部引入 AllPostsRssFeed
     path('all/rss/', AllPostsRssFeed(), name='rss'),
+
+    # API 接口
+    path('api/', include('blog.api_urls')),
 ]
